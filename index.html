@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Semantic UI dropdown</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- jquery 読み込み -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- semantic.js 読み込み -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js" integrity="sha256-HcON65l89nxNl7vaRECVPe/zNDBzhCcJYBE7O+EcruU=" crossorigin="anonymous"></script>
+        <!-- semantic.css 読み込み --> 
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+    </head>
+    <body>
+        <select class="ui dropdown" onChange="location.href=value;">
+            <option value="">Select</option>
+            <option value="./sports/baseball.html">Baseball</option>
+            <option value="./sports/soccer.html">Soccer</option>
+            <option value="./sports/basketball.html">Basketball</option>
+            <option value="./sports/golf.html">Golf</option>
+            <option value="./sports/table_tennis.html">Table tennis</option>
+            <option value="./sports/volleyball.html">Volley ball</option>
+        </select>
+    </body>
+    <script>
+        $('.ui.dropdown').dropdown();
+    </script>
+</html>
